@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.crazy {
+  background-color: #ff0000;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+.Card {
+  background-color: white;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #555;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
