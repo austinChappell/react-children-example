@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Card(props) {
+  // generate random rgb value
   function generateRandomColor() {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
@@ -8,6 +9,7 @@ function Card(props) {
     return `rgb(${r}, ${g}, ${b})`;
   }
 
+  // if funMode, randomize background color of card
   const cardStyle = {
     backgroundColor: props.funMode ? generateRandomColor() : 'white',
   };
@@ -17,6 +19,7 @@ function Card(props) {
       <div className="title">
         <h2>{props.title}</h2>
       </div>
+      {/* whatever goes in between the opening and closing tags of the Card component will take the place of props.children */}
       <div className="body">{props.children}</div>
     </div>
   );
